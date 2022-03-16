@@ -226,9 +226,9 @@ public extension SolanaSDK {
         let instructions: [ParsedInstruction]
     }
     struct TokenBalance: Decodable {
-        let accountIndex: UInt64
-        let mint: String
-        let uiTokenAmount: TokenAccountBalance
+        public let accountIndex: UInt64
+        public let mint: String
+        public let uiTokenAmount: TokenAccountBalance
     }
     struct TransactionStatus: Decodable {
         public let err: TransactionError?
