@@ -222,8 +222,8 @@ public extension SolanaSDK {
     }
     
     struct InnerInstruction: Decodable {
-        let index: UInt32
-        let instructions: [ParsedInstruction]
+        public let index: UInt32
+        public let instructions: [ParsedInstruction]
     }
     struct TokenBalance: Decodable {
         public let accountIndex: UInt64
